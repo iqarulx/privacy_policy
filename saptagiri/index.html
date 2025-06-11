@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>App Permissions - Saptagiri Payroll</title>
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --accent-color: #3498DB;
+            --text-color: #333;
+            --background-color: #F8F9FA;
+            --card-background: #FFFFFF;
+            --border-radius: 10px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-top: 30px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        p,
+        ul {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .permission-card {
+            background-color: #f8f9fa;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .permission-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .permission-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            color: var(--accent-color);
+        }
+
+        .required-badge {
+            background-color: #e74c3c;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 15px;
+        }
+
+        .privacy-section {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin: 30px 0;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 50px;
+            color: #777;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Payroll App Permissions</h1>
+        <p><em>Last updated: June 11, 2025</em></p>
+
+        <h2>Why We Need These Permissions</h2>
+        <p>To provide full functionality for our payroll and attendance tracking system, our app requires certain
+            permissions. Below we explain each permission and how it's used.</p>
+
+        <div class="permission-card">
+            <div class="permission-title">
+                <span class="permission-icon">🔔</span>
+                <h3>Notifications</h3>
+                <span class="required-badge">Required</span>
+            </div>
+            <p>We need notification permission to:</p>
+            <ul>
+                <li>Send important messages from your organization</li>
+                <li>Notify you about payroll updates and schedule changes</li>
+                <li>Alert you to urgent announcements</li>
+                <li>Provide timely reminders about attendance and deadlines</li>
+            </ul>
+        </div>
+
+        <div class="permission-card">
+            <div class="permission-title">
+                <span class="permission-icon">✉️</span>
+                <h3>SMS/Messages</h3>
+                <span class="required-badge">Required</span>
+            </div>
+            <p>We need SMS permission to:</p>
+            <ul>
+                <li>Send login/punch data via SMS when your device is offline</li>
+                <li>Ensure your attendance is recorded even without internet connection</li>
+                <li>Provide a fallback method for critical time tracking</li>
+                <li>Maintain accurate records during network outages</li>
+            </ul>
+        </div>
+
+        <div class="permission-card">
+            <div class="permission-title">
+                <span class="permission-icon">📍</span>
+                <h3>Location</h3>
+                <span class="required-badge">Required</span>
+            </div>
+            <p>We need location permission to:</p>
+            <ul>
+                <li>Verify you are within the designated geo-fencing area when punching in/out</li>
+                <li>Record latitude and longitude coordinates for attendance verification</li>
+                <li>Prevent time tracking from unauthorized locations</li>
+                <li>Ensure compliance with workplace location policies</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2>Your Privacy Matters</h2>
+            <p>We respect your privacy and only use these permissions for the specific purposes mentioned above. We do
+                not access your messages, location, or other data unless it's directly related to payroll and attendance
+                functions.</p>
+            <p><strong>We never:</strong></p>
+            <ul>
+                <li>Read your personal messages unrelated to attendance</li>
+                <li>Track your location outside of work hours</li>
+                <li>Share your data with third parties for marketing purposes</li>
+                <li>Store more information than necessary for payroll functions</li>
+            </ul>
+            <a href="https://srisoftwarez.com/privacypolicy.php" class="btn">View Full Privacy Policy</a>
+        </div>
+
+        <h2>Permission Control</h2>
+        <p>You can manage these permissions at any time through your device settings. However, please note that
+            disabling certain permissions may limit the app's functionality.</p>
+
+        <div class="footer">
+            <p>© 2025 Saptagiri Payroll. All rights reserved.</p>
+            <p>Contact us: contact@srisoftwarez.com</p>
+        </div>
+    </div>
+</body>
+
+</html>
